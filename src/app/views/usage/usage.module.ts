@@ -7,12 +7,19 @@ import { OptionsComponent } from './options/options.component';
 import { EventsComponent } from './events/events.component';
 import { BoundaryComponent } from './boundary/boundary.component';
 import { ApiComponent } from './api/api.component';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import { MarkdownModule } from 'ngx-markdown';
+import { AngularDraggableModule } from 'angular2-draggable';
+
 
 @NgModule({
   imports: [
     CommonModule,
     UsageRoutingModule,
-    SharedModule
+    AngularDraggableModule,
+    SharedModule,
+    TabsModule,
+    MarkdownModule
   ],
   declarations: [
     BasicComponent,

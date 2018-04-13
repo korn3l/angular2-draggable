@@ -1,4 +1,5 @@
 {
+  "$schema": "../node_modules/ng-packagr/package.schema.json",
   "name": "angular2-draggable",
   "version": "1.3.2",
   "description": "Angular directive that makes the DOM element draggable",
@@ -9,10 +10,22 @@
     "email": "xieziyu@foxmail.com"
   },
   "homepage": "https://github.com/xieziyu/angular2-draggable#readme",
-  "keywords": [ "angular", "4", "5", "draggable", "ng"],
+  "keywords": [
+    "angular",
+    "4",
+    "5",
+    "draggable",
+    "ng"
+  ],
   "peerDependencies": {
     "@angular/common": ">=4.0.0",
     "@angular/compiler": ">=4.0.0",
     "@angular/core": ">=4.0.0"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "src/public_api.ts"
+    },
+    "dest": "../dist/lib"
   }
 }
